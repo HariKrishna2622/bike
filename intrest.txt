@@ -1,0 +1,66 @@
+class test {
+	double p,r;
+
+	void intrest(double p) {
+		
+		double c=p*r/100;
+		
+	}
+}
+
+	class hdfc extends test{
+	@Override
+		void intrest(double p) {
+			int r=16;
+			double c=p*r/100;
+			
+			System.out.println("hdfc"+c);
+			double d=c+p;
+			System.out.println("total amount"+d);
+			
+		}
+		
+	}
+class sbi extends test{
+		@Override
+		
+		void intrest(double p) {
+			int r=18;
+			double c=p*r/100;
+			System.out.println(c);
+			double d=c+p;
+			System.out.println("total amount"+d);
+		}
+		
+		
+		}
+
+class axis extends test{
+		@Override
+		
+		void intrest(double p) {
+			int r=20;
+			double c=p*r/100;
+			System.out.println(c);
+			double d=c+p;
+			System.out.println("total amount"+d);
+		}
+		
+		
+	}
+public class bn{
+
+
+	public static void main(String[] args) {
+		
+		hdfc h = new hdfc();
+		h.intrest(50000);
+		sbi s=new sbi();
+		s.intrest(50000);
+		axis a=new axis();
+		a.intrest(50000);
+		
+
+	}
+
+}
